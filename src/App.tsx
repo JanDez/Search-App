@@ -1,14 +1,12 @@
-//import { useState } from 'react'
+import { ThemeProvider } from './context/ThemeProvider';
+import Home from './pages/Home';
 
 function App() {
-
   return (
-    <>
-      <div>
-        <p>Hello World</p>
-      </div>
-    </>
-  )
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
