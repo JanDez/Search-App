@@ -32,11 +32,11 @@ export default function SearchModal() {
     return (
         <ErrorBoundary>
             <div className="fixed inset-0 bg-black/50 flex justify-center items-start pt-[10vh]" onClick={handleBackdropClick}>
-                <div className="relative w-full max-w-[900px] mx-4">
+                <div className="relative w-full max-w-[900px] mx-4 max-h-[80vh] flex flex-col">
                     <CloseButton onClick={closeModal} />
                     <div 
                         ref={modalRef} 
-                        className="bg-background rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.2)] dark:shadow-[0_0_50px_rgba(255, 255, 255, 0.05)] border-[0.5px] border-border"
+                        className="bg-background rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.2)] dark:shadow-[0_0_50px_rgba(255, 255, 255, 0.05)] border-[0.5px] border-border overflow-y-auto"
                     >
                         <SearchForm />
                     </div>
