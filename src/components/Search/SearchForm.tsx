@@ -113,7 +113,7 @@ export default function SearchForm() {
 
             {query && (
                 <div 
-                    className="max-h-[35vh] overflow-y-auto"
+                    className="max-h-[15vh] overflow-y-auto"
                     role="region"
                     aria-live="polite"
                     aria-label="Search results"
