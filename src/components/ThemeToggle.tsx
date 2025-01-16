@@ -8,7 +8,7 @@ const ThemeToggle = React.memo(() => {
 
     return (
         <Toggle.Root
-            className="Toggle"
+            className="Toggle fixed top-4 right-4"
             aria-label="Toggle theme"
             pressed={theme === 'dark'}
             onPressedChange={toggleTheme}
